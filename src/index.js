@@ -1,30 +1,56 @@
+import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
 
-const elem1 = <span>Привет</span>;
-const elem2 = <span>мир</span>;
-const element = (
-  <div>
-    {elem1}
-    {elem2}
-  </div>
+import statisticalData from './statistical-data.json';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root'),
 );
 
-console.log(element);
+// ReactDOM.render(<App />, document.querySelector('#root'));
 
-// ReactDOM.render(element, document.querySelector('#root'));
-// ====================================================================
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// import './index.css';
-// import App from './App';
-// import reportWebVitals from './reportWebVitals';
+// function Statistics(props) {
+//   const { label, percentage } = props;
+//   return (
+//     <section class="statistics">
+//       <h2 class="title">Upload stats</h2>
+
+//       <ul class="stat-list">
+//         <li class="item">
+//           <span class="label">{slabel}</span>
+//           <span class="percentage">{spercentage}%</span>
+//         </li>
+//         <li class="item">
+//           <span class="label">{slabel}</span>
+//           <span class="percentage">{spercentage}%</span>
+//         </li>
+//         <li class="item">
+//           <span class="label">{slabel}</span>
+//           <span class="percentage">{spercentage}%</span>
+//         </li>
+//         <li class="item">
+//           <span class="label">{slabel}</span>
+//           <span class="percentage">{spercentage}%</span>
+//         </li>
+//       </ul>
+//     </section>
+//   );
+// }
 
 // ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
+//   <Statistics
+//     label={statisticalData.label}
+//     percentage={statisticalData.percentage}
+//   />,
+//   document.querySelector('#root'),
 // );
+
+// ====================================================================
 
 // // If you want to start measuring performance in your app, pass a function
 // // to log results (for example: reportWebVitals(console.log))
