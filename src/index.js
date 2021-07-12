@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-
-import statisticalData from './statistical-data.json';
+import AppSt from './App';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,43 +11,12 @@ ReactDOM.render(
   document.getElementById('root'),
 );
 
-// ReactDOM.render(<App />, document.querySelector('#root'));
-
-// function Statistics(props) {
-//   const { label, percentage } = props;
-//   return (
-//     <section class="statistics">
-//       <h2 class="title">Upload stats</h2>
-
-//       <ul class="stat-list">
-//         <li class="item">
-//           <span class="label">{slabel}</span>
-//           <span class="percentage">{spercentage}%</span>
-//         </li>
-//         <li class="item">
-//           <span class="label">{slabel}</span>
-//           <span class="percentage">{spercentage}%</span>
-//         </li>
-//         <li class="item">
-//           <span class="label">{slabel}</span>
-//           <span class="percentage">{spercentage}%</span>
-//         </li>
-//         <li class="item">
-//           <span class="label">{slabel}</span>
-//           <span class="percentage">{spercentage}%</span>
-//         </li>
-//       </ul>
-//     </section>
-//   );
-// }
-
-// ReactDOM.render(
-//   <Statistics
-//     label={statisticalData.label}
-//     percentage={statisticalData.percentage}
-//   />,
-//   document.querySelector('#root'),
-// );
+ReactDOM.render(
+  <React.StrictMode>
+    <AppSt />
+  </React.StrictMode>,
+  document.getElementById('root'),
+);
 
 // ====================================================================
 
