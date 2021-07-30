@@ -1,6 +1,5 @@
 import Profile from './components/Profile/Profile';
 import user from './user.json';
-import SectionSt from './components/Statistics/SectionSt';
 import statisticalData from './statistical-data.json';
 import StatisticsList from './components/Statistics/StatisticsList';
 import FriendList from './components/FriendList/FriendList';
@@ -17,14 +16,11 @@ export default function App() {
         name={user.name}
         tag={user.tag}
         location={user.location}
-        followers={user.stats.followers}
-        views={user.stats.views}
-        likes={user.stats.likes}
+        stats={user.stats}
       />
 
-      <SectionSt title="Upload stats">
-        <StatisticsList stats={statisticalData} />
-      </SectionSt>
+      <StatisticsList title="Upload stats" stats={statisticalData} />
+      <StatisticsList stats={statisticalData} />
 
       <FriendList friends={friends} />
 
